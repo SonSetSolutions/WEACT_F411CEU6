@@ -2,6 +2,8 @@
 #define MICROPY_HW_MCU_NAME         "STM32F411CE"
 #define MICROPY_HW_FLASH_FS_LABEL   "WeActF411CE"
 
+#define MICROPY_BOARD_FROZEN_OS_FILE 	"os.py"
+
 #define MICROPY_PY_THREAD           (1)
 
 // 1 = use internal flash (512 KByte)
@@ -11,10 +13,12 @@
 #define MICROPY_HW_HAS_SWITCH       (1)
 #define MICROPY_HW_HAS_FLASH        (1)
 #define MICROPY_HW_ENABLE_RTC       (1)
-#define MICROPY_HW_ENABLE_USB       (1)
+#define MICROPY_HW_ENABLE_USB       (0)
 #define MICROPY_HW_ENABLE_SERVO     (1)
 #define MICROPY_HW_ENABLE_SDCARD    (0)
 #define MICROPY_HW_ENABLE_RNG       (0)
+#define MICROPY_HW_ENABLE_ADC       (1)
+#define MICROPY_HW_ENABLE_DAC       (0)
 
 // HSE is 25MHz, CPU freq set to 96MHz
 #define MICROPY_HW_CLK_PLLM (25)
